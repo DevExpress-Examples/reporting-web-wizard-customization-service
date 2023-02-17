@@ -24,7 +24,8 @@ public class InstantReportWizardCustomizationService : ReportWizardCustomization
             CanInstantlyFinish = true,
             ID = "InstantReport",
             Text = "Instant Report",
-            ImageTemplateName = "instant-report"
+            ImageTemplateName = "instant-report",
+            LocalizationID = "InstantReportLocalized"
         });
         predefinedTypes.Add(new DevExpress.XtraReports.Web.ReportDesigner.DataContracts.ReportWizardTemplate() {
             CanInstantlyFinish = true,

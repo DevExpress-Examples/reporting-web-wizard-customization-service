@@ -9,4 +9,8 @@
     // Add the created data source to the list of default data sources.
     foreach (var dataSourceItem in Model.DataSources)
         settings.DataSources.Add(dataSourceItem.Key, dataSourceItem.Value);
+    settings.ClientSideEvents.CustomizeLocalization = "function(s) { " +
+    "s.UpdateLocalization({" +
+        "'Data Source': 'Datenquelle'," +
+        "'Data Member': 'Datenelement'});}";
 }).BindToUrl("TestReport").GetHtml()

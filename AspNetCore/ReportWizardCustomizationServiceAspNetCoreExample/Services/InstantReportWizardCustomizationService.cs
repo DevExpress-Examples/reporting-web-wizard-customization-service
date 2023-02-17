@@ -2,6 +2,7 @@ using DevExpress.XtraReports.UI;
 using DevExpress.XtraReports.Web.ReportDesigner.DataContracts;
 using DevExpress.XtraReports.Web.ReportDesigner.Services;
 using DevExpress.XtraReports.Wizards;
+using System.Linq;
 using System.Threading.Tasks;
 
 public class InstantReportWizardCustomizationService : ReportWizardCustomizationService {
@@ -18,6 +19,7 @@ public class InstantReportWizardCustomizationService : ReportWizardCustomization
         return Task.FromResult(TryCreateCustomReport(model, dataSource, dataMember, customWizardData, report));
     }
     public override void CustomizeReportTypeList(ReportWizardTemplateCollection predefinedTypes) {
+        predefinedTypes.Remove(predefinedTypes.Where(x => x.ID == nameof(ReportType.CrossTab)).First());
         predefinedTypes.Add(new DevExpress.XtraReports.Web.ReportDesigner.DataContracts.ReportWizardTemplate() {
             CanInstantlyFinish = true,
             ID = "InstantReport",

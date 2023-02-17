@@ -187,7 +187,9 @@
       <DependentUpon>NWind.mdf</DependentUpon>
     </Content>
     <Content Include="Content\ImageClasses.css" />
-    <Content Include="Content\InstantReportCheck.png" />
+    <Content Include="Content\InstantReportCheck.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\ace.js" />

@@ -1,4 +1,6 @@
 ﻿.instant-report-image {
     background-image: url('InstantReportCheck.png');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 96px;
 }
