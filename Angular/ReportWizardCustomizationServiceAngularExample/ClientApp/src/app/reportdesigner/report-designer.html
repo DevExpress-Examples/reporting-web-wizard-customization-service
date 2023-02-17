@@ -1,0 +1,6 @@
+<dx-report-designer [reportUrl]="reportUrl"height="calc(100vh - 90px)">
+    <dxrd-request-options [getDesignerModelAction]="getDesignerModelAction" [host]="hostUrl"></dxrd-request-options>
+    <dxrd-designer-model-settings [allowMDI]="true">
+        <dxrd-datasource-settings [allowAddDataSource]="false" [allowEditDataSource]="false" [allowRemoveDataSource]="false"></dxrd-datasource-settings>
+    </dxrd-designer-model-settings>
+</dx-report-designer>

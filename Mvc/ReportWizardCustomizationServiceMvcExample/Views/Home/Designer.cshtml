@@ -1,0 +1,12 @@
+﻿@using ReportWizardCustomizationServiceMvcExample.Models
+@model ReportDesignerModel
+
+@Html.DevExpress().ReportDesigner(settings => {
+    settings.Name = "ReportDesigner1";
+    settings.SettingsDataSource.AllowAddDataSource = false;
+    settings.SettingsDataSource.AllowEditDataSource = false;
+    settings.SettingsDataSource.AllowRemoveDataSource = false;
+    // Add the created data source to the list of default data sources.
+    foreach (var dataSourceItem in Model.DataSources)
+        settings.DataSources.Add(dataSourceItem.Key, dataSourceItem.Value);
+}).BindToUrl("TestReport").GetHtml()

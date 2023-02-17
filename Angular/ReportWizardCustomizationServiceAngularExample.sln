@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportWizardCustomizationServiceAngularExample", "ReportWizardCustomizationServiceAngularExample\ReportWizardCustomizationServiceAngularExample.csproj", "{2944A3F8-BDEF-4BE6-8DEC-1EA86489F396}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2944A3F8-BDEF-4BE6-8DEC-1EA86489F396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2944A3F8-BDEF-4BE6-8DEC-1EA86489F396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2944A3F8-BDEF-4BE6-8DEC-1EA86489F396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2944A3F8-BDEF-4BE6-8DEC-1EA86489F396}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CD59096-537C-4AD7-8E4D-4020AF14AD22}
+	EndGlobalSection
+EndGlobal

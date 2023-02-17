@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="ReportWizardCustomizationServiceMvcExample.MvcApplication" Language="C#" %>
