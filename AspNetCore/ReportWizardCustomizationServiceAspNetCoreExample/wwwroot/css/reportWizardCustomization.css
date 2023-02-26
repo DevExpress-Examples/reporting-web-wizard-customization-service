@@ -1,0 +1,27 @@
+﻿.instant-report-image {
+    background-image: url('InstantReportCheck.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 96px;
+}
+
+.dxrd-wizard-type-page-labels {
+    flex-direction: column
+}
+
+.dxrd-wizard-type-page-labels .dx-fieldset {
+    width: 80%;
+}
+
+.dxrd-wizard-type-page.dxrd-wizard-type-page-labels .dx-fieldset .dx-field .dx-field-label {
+    font-size: 14px;
+}
+
+.dxrd-wizard-type-page-labels .dx-fieldset .dx-field .dx-field-value .dx-textbox {
+    height: 30px;
+}
+
+.dxrd-wizard-type-page.dxrd-wizard-type-page-labels .page-title {
+    font-size: 28px;
+    height: 100px;
+}

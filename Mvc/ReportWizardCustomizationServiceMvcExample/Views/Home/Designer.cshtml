@@ -1,16 +1,62 @@
 ﻿@using ReportWizardCustomizationServiceMvcExample.Models
 @model ReportDesignerModel
 
+<script type="text/html" id="instant-report">
+    <svg viewBox="-2 -5 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Layer_1" transform="translate(-2, -5)" style="enable-background:new 0 0 32 32">
+            <g id="Check">
+                <polygon class="dxd-icon-fill" points="27,5 11,21 5,15 2,18 11,27 30,8  " fill="#727272" />
+            </g>
+        </g>
+    </svg>
+</script>
+
+<script type="text/html" id="wizard-labels-page">
+    <div class="dxrd-wizard-type-page dxrd-wizard-type-page-labels">
+        <div class="page-title">Custom Wizard Page</div>
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">Report Name</div>
+                <div class="dx-field-value">
+                    <div data-bind="dxTextBox: { value: label4Value }"></div>
+                </div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Label1: </div>
+                <div class="dx-field-value">
+                    <div data-bind="dxTextBox: { value: label1Value }"></div>
+                </div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Label2: </div>
+                <div class="dx-field-value">
+                    <div data-bind="dxTextBox: { value: label2Value }"></div>
+                </div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Label3: </div>
+                <div class="dx-field-value">
+                    <div data-bind="dxTextBox: { value: label3Value }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<link href="~/Content/reportWizardCustomization.css" rel="stylesheet" />
+
+<script src="~/Scripts/reportWizardCustomization.js"></script>
+
 @Html.DevExpress().ReportDesigner(settings => {
     settings.Name = "ReportDesigner1";
+
+    settings.ClientSideEvents.CustomizeWizard = "CustomizeReportWizard";
+
     settings.SettingsDataSource.AllowAddDataSource = false;
     settings.SettingsDataSource.AllowEditDataSource = false;
     settings.SettingsDataSource.AllowRemoveDataSource = false;
+
     // Add the created data source to the list of default data sources.
     foreach (var dataSourceItem in Model.DataSources)
         settings.DataSources.Add(dataSourceItem.Key, dataSourceItem.Value);
-    settings.ClientSideEvents.CustomizeLocalization = "function(s) { " +
-    "s.UpdateLocalization({" +
-        "'Data Source': 'Datenquelle'," +
-        "'Data Member': 'Datenelement'});}";
-}).BindToUrl("TestReport").GetHtml()
+    }).BindToUrl("TestReport").GetHtml()

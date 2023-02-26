@@ -18,19 +18,40 @@
         </svg>
     </script>
 
-    <script type="text/html" id="empty-template">
-        <svg viewBox="-2 -5 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        </svg>
+    <script type="text/html" id="wizard-labels-page">
+        <div class="dxrd-wizard-type-page dxrd-wizard-type-page-labels">
+            <div class="page-title">Custom Wizard Page</div>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Report Name</div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxTextBox: { value: label4Value }"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Label1: </div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxTextBox: { value: label1Value }"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Label2: </div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxTextBox: { value: label2Value }"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Label3: </div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxTextBox: { value: label3Value }"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </script>
+   <!-- <script src="assets/reportWizardCustomization.js"></script>-->
+    <link href="assets/reportWizardCustomization.css" rel="stylesheet" />
 
-    <style>
-        .instant-report-image {
-            background-image: url("assets/InstantReportCheck.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 70px 96px;
-        }
-    </style>
 
 
 </head>

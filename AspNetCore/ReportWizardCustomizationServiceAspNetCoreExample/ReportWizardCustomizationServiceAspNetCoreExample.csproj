@@ -42,6 +42,9 @@
     <Exec Command="npm install" />
   </Target>
   <ItemGroup>
+    <None Include="wwwroot\js\reportWizardCustomization.js" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.0" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.114.4" />
