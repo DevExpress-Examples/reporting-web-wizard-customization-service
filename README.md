@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/602963716/2022.2)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1148046)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Reporting for Web (ASP.NET MVC, ASP.NET Core and Angular) - How to Use the Report Wizard Customization API and Hide Data Source Actions in Report Designer
 
 This example shows how to add a custom report template to the Report Wizard and make final adjustments to the report you are creating. The Report designer is configured to hide data source actions so that the user cannot add, modify, or delete the report data source.
@@ -35,21 +30,21 @@ In the Report Designer, switch to the **Field List** panel to make sure that dat
 ### Service Registration
 
 - ASP.NET MVC: [Global.asax.cs](Mvc/ReportWizardCustomizationServiceMvcExample/Global.asax.cs)
-- ASP.NET Core: [Startup.cs](AspNetCore/ReportWizardCustomizationServiceAspNetCoreExample/Startup.cs)
+- ASP.NET Core: [Startup.cs](AspNetCore/RWCSAspNetCoreExample/Startup.cs)
 
 ### Custom Wizard Page for the Custom Label Report
 
 - ASP.NET MVC: [Designer.cshtml](Mvc/ReportWizardCustomizationServiceMvcExample/Views/Home/Designer.cshtml)
-- ASP.NET Core: [Designer.cshtml](AspNetCore/ReportWizardCustomizationServiceAspNetCoreExample/Views/Home/Designer.cshtml)
-- Angular: [report-designer.html](Angular/ReportWizardCustomizationServiceAngularExample/ClientApp/src/app/reportdesigner/report-designer.html) and[report-designer.ts](Angular/ReportWizardCustomizationServiceAngularExample/ClientApp/src/app/reportdesigner/report-designer.ts)
+- ASP.NET Core: [Designer.cshtml](AspNetCore/RWCSAspNetCoreExample/Views/Home/Designer.cshtml)
+- Angular: [report-designer.html](Angular/RWCSAngularExample/ClientApp/src/app/reportdesigner/report-designer.html) and[report-designer.ts](Angular/RWCSAngularExample/ClientApp/src/app/reportdesigner/report-designer.ts)
 - [reportWizardCustomization.js](Mvc/ReportWizardCustomizationServiceMvcExample/Scripts/reportWizardCustomization.js)
 - [LabelReport.cs](Mvc/ReportWizardCustomizationServiceMvcExample/PredefinedReports/LabelReport.cs)
 
 ### Report Designer Data Source Settings
 
 - ASP.NET MVC: [Designer.cshtml](Mvc/ReportWizardCustomizationServiceMvcExample/Views/Home/Designer.cshtml)
-- ASP.NET Core: [HomeController.cs](AspNetCore/ReportWizardCustomizationServiceAspNetCoreExample/Controllers/HomeController.cs)
-- Angular: [report-designer.html](Angular/ReportWizardCustomizationServiceAngularExample/ClientApp/src/app/reportdesigner/report-designer.html)
+- ASP.NET Core: [HomeController.cs](AspNetCore/RWCSAspNetCoreExample/Controllers/HomeController.cs)
+- Angular: [report-designer.html](Angular/RWCSAngularExample/ClientApp/src/app/reportdesigner/report-designer.html)
 
 ## Documentation
 
