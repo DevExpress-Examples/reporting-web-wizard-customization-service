@@ -95,7 +95,7 @@
             this.Detail,
             this.TopMargin,
             this.BottomMargin});
-            this.Version = "23.1";
+            this.Version = "22.2";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }

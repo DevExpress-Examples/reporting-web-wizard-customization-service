@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /**
 * DevExtreme (dx.carmine.css)
-* Version: 23.1.0 (build 23055-0308)
-* Build date: Fri Feb 24 2023
+* Version: 22.2.4
+* Build date: Thu Jan 19 2023
 *
 * Copyright (c) 2012 - 2023 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
@@ -2352,12 +2352,6 @@
   margin-right: 0;
   margin-left: 0;
 }
-.dx-button a {
-  text-decoration: none;
-}
-.dx-button-back .dx-button-text {
-  display: none;
-}
 .dx-button-content {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -2372,7 +2366,6 @@
   -ms-flex-pack: center;
   justify-content: center;
   vertical-align: middle;
-  line-height: 1.35715;
 }
 .dx-button-has-text .dx-button-content,
 .dx-button-has-text .dx-button-content .dx-button-text {
@@ -2401,6 +2394,9 @@
 }
 .dx-button-text {
   line-height: 1.2858;
+}
+.dx-button a {
+  text-decoration: none;
 }
 .dx-button .dx-button-content {
   padding: 8px;
@@ -2478,6 +2474,9 @@
 .dx-rtl.dx-button-back .dx-icon.dx-icon-right {
   margin-right: 0;
   margin-left: 0;
+}
+.dx-button-back .dx-button-text {
+  display: none;
 }
 .dx-button {
   border-radius: 2px;
@@ -2730,6 +2729,16 @@
 .dx-button-normal.dx-state-hover .dx-button-content {
   background-color: transparent;
   border-radius: 2px;
+}
+.dx-texteditor-buttons-container > .dx-button {
+  margin: 1px;
+}
+.dx-texteditor-buttons-container > .dx-button > .dx-button-content {
+  padding-top: 5px;
+  padding-bottom: 6px;
+}
+.dx-texteditor-buttons-container > .dx-button.dx-button-has-icon:not(.dx-button-has-text) > .dx-button-content {
+  padding: 6px;
 }
 .dx-buttongroup {
   display: inline-block;
@@ -4412,16 +4421,6 @@
   font-size: 18px;
   text-align: center;
   line-height: 18px;
-}
-.dx-texteditor-buttons-container > .dx-button {
-  margin: 1px;
-}
-.dx-texteditor-buttons-container > .dx-button > .dx-button-content {
-  padding-top: 5px;
-  padding-bottom: 6px;
-}
-.dx-texteditor-buttons-container > .dx-button.dx-button-has-icon:not(.dx-button-has-text) > .dx-button-content {
-  padding: 6px;
 }
 .dx-placeholder::before {
   padding: 7px 9px 8px;
@@ -7363,14 +7362,14 @@
   box-shadow: inset 0 -1px 0 1000px rgba(240,91,65,.12);
   color: #333;
 }
-.dx-calendar-cell.dx-calendar-empty-cell:not(.dx-calendar-selected-date,.dx-calendar-range-date),
-.dx-calendar-cell.dx-calendar-other-view:not(.dx-calendar-selected-date,.dx-calendar-range-date) {
+.dx-calendar-cell.dx-calendar-empty-cell:not(.dx-calendar-selected-date),
+.dx-calendar-cell.dx-calendar-other-view:not(.dx-calendar-selected-date) {
   color: #8c8c8c;
 }
-.dx-calendar-cell.dx-calendar-empty-cell:not(.dx-calendar-selected-date,.dx-calendar-range-date).dx-state-active,
-.dx-calendar-cell.dx-calendar-empty-cell:not(.dx-calendar-selected-date,.dx-calendar-range-date).dx-state-hover,
-.dx-calendar-cell.dx-calendar-other-view:not(.dx-calendar-selected-date,.dx-calendar-range-date).dx-state-active,
-.dx-calendar-cell.dx-calendar-other-view:not(.dx-calendar-selected-date,.dx-calendar-range-date).dx-state-hover {
+.dx-calendar-cell.dx-calendar-empty-cell:not(.dx-calendar-selected-date).dx-state-active,
+.dx-calendar-cell.dx-calendar-empty-cell:not(.dx-calendar-selected-date).dx-state-hover,
+.dx-calendar-cell.dx-calendar-other-view:not(.dx-calendar-selected-date).dx-state-active,
+.dx-calendar-cell.dx-calendar-other-view:not(.dx-calendar-selected-date).dx-state-hover {
   color: #b0b0b0;
 }
 .dx-calendar-cell.dx-calendar-empty-cell {
@@ -7400,18 +7399,6 @@
 .dx-calendar-cell.dx-calendar-selected-date.dx-calendar-today.dx-calendar-contoured-date {
   -webkit-box-shadow: inset 0 0 0 1px #bdc3c7,inset 0 0 0 1000px #f05b41;
   box-shadow: inset 0 0 0 1px #bdc3c7,inset 0 0 0 1000px #f05b41;
-}
-.dx-calendar-cell.dx-calendar-range-date:not(.dx-calendar-selected-date),
-.dx-calendar-cell.dx-calendar-range-date:not(.dx-calendar-selected-date).dx-calendar-today {
-  color: #fff;
-  -webkit-box-shadow: inset 0 0 0 1000px #fbd5cf;
-  box-shadow: inset 0 0 0 1000px #fbd5cf;
-  font-weight: 400;
-}
-.dx-calendar-cell.dx-calendar-range-date:not(.dx-calendar-selected-date).dx-calendar-contoured-date,
-.dx-calendar-cell.dx-calendar-range-date:not(.dx-calendar-selected-date).dx-calendar-today.dx-calendar-contoured-date {
-  -webkit-box-shadow: inset 0 0 0 1px #bdc3c7,inset 0 0 0 1000px #fbd5cf;
-  box-shadow: inset 0 0 0 1px #bdc3c7,inset 0 0 0 1000px #fbd5cf;
 }
 .dx-invalid.dx-calendar {
   border-color: rgba(247,77,97,.4);
@@ -22993,8 +22980,8 @@ input.dx-hidden {
 }
 /**
 * DevExpress Analytics (dist\css\dx-analytics.carmine.css)
-* Version:  23.1.1-build-2355-1220
-* Build date: Feb 24, 2023
+* Version:  22.2.4
+* Build date: Jan 25, 2023
 * Copyright (c) 2012 - 2023 Developer Express Inc. ALL RIGHTS RESERVED
 * License: https://www.devexpress.com/Support/EULAs/universal.xml
 */

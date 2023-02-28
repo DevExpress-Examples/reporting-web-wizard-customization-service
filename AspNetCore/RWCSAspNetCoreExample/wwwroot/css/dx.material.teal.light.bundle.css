@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /**
 * DevExtreme (dx.material.teal.light.css)
-* Version: 23.1.0 (build 23055-0308)
-* Build date: Fri Feb 24 2023
+* Version: 22.2.4
+* Build date: Thu Jan 19 2023
 *
 * Copyright (c) 2012 - 2023 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
@@ -2437,12 +2437,6 @@
   margin-left: 0;
   color: rgba(0,0,0,.87);
 }
-.dx-button a {
-  text-decoration: none;
-}
-.dx-button-back .dx-button-text {
-  display: none;
-}
 .dx-button-content {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -2489,6 +2483,9 @@
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: .04em;
+}
+.dx-button a {
+  text-decoration: none;
 }
 .dx-button .dx-button-content {
   padding: 0;
@@ -2797,6 +2794,9 @@
 .dx-rtl.dx-button.dx-button-back .dx-icon.dx-icon-right {
   margin-right: 0;
   margin-left: 0;
+}
+.dx-button.dx-button-back .dx-button-text {
+  display: none;
 }
 .dx-button-mode-text {
   background-color: transparent;
@@ -9194,21 +9194,6 @@
   color: #fff;
   background-color: #009688;
   font-weight: 400;
-}
-.dx-calendar-cell.dx-calendar-range-date {
-  background-color: rgba(0,150,136,.08);
-  -webkit-box-shadow: inset 0 2px #fff,inset 0 -2px #fff;
-  box-shadow: inset 0 2px #fff,inset 0 -2px #fff;
-  font-weight: 400;
-  border-radius: 0;
-}
-.dx-calendar-cell.dx-calendar-range-start-date {
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-.dx-calendar-cell.dx-calendar-range-end-date {
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
 }
 .dx-invalid.dx-calendar {
   border-color: rgba(244,67,54,.4);
@@ -20723,6 +20708,9 @@ input.dx-hidden {
 .dx-scheduler-timeline .dx-scheduler-header-panel-cell:not(.dx-scheduler-header-panel-week-cell) {
   width: 200px;
 }
+.dx-scheduler-timeline .dx-scheduler-date-table-cell {
+  border-right: none;
+}
 .dx-scheduler-timeline .dx-scheduler-work-space-vertical-group-table {
   display: none;
 }
@@ -22247,10 +22235,6 @@ input.dx-hidden {
   font-size: 30px;
   line-height: 35px;
 }
-.dx-scheduler-timeline .dx-scheduler-date-table-cell {
-  border-right: none;
-  height: 50px;
-}
 .dx-scheduler-work-space-day.dx-scheduler-work-space-count .dx-scheduler-header-panel {
   margin-top: 0;
 }
@@ -22871,9 +22855,6 @@ input.dx-hidden {
 .dx-field-item.dx-label-v-align .dx-invalid-message > .dx-overlay-wrapper {
   -webkit-transform: translate(0,0)!important;
   transform: translate(0,0)!important;
-}
-.dx-field-item .dx-toggle-controls-paddings {
-  padding-left: 16px;
 }
 .dx-field-item-content-wrapper.dx-invalid .dx-field-item-help-text {
   color: transparent;
@@ -26298,8 +26279,8 @@ input.dx-hidden {
 }
 /**
 * DevExpress Analytics (dist\css\dx-analytics.material.teal.light.css)
-* Version:  23.1.1-build-2355-1220
-* Build date: Feb 24, 2023
+* Version:  22.2.4
+* Build date: Jan 25, 2023
 * Copyright (c) 2012 - 2023 Developer Express Inc. ALL RIGHTS RESERVED
 * License: https://www.devexpress.com/Support/EULAs/universal.xml
 */
