@@ -57,8 +57,8 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -213,48 +213,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\NWind.mdf" />
-    <Content Include="App_Data\NWind_log.ldf">
-      <DependentUpon>NWind.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\InstantReportCheck.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\reportWizardCustomization.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\ace.js" />
-    <Content Include="Scripts\cldr.event.js" />
-    <Content Include="Scripts\cldr.js" />
-    <Content Include="Scripts\cldr.supplemental.js" />
-    <Content Include="Scripts\cldr.unresolved.js" />
-    <Content Include="Scripts\ext-language_tools.js" />
-    <Content Include="Scripts\globalize.currency.js" />
-    <Content Include="Scripts\globalize.date.js" />
-    <Content Include="Scripts\globalize.js" />
-    <Content Include="Scripts\globalize.message.js" />
-    <Content Include="Scripts\globalize.number.js" />
-    <Content Include="Scripts\jquery.js" />
-    <Content Include="Scripts\jquery.min.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-3.3.0.debug.js" />
-    <Content Include="Scripts\knockout-3.3.0.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
     <None Include="packages.config" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\reportWizardCustomization.js" />
-    <Content Include="Views\Shared\DisplayTemplates\Boolean.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Boolean.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Decimal.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\EmailAddress.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\MultilineText.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Password.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
