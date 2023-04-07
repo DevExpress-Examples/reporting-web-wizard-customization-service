@@ -1,25 +1,26 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/602963716/2022.2)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1148046)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
-# Reporting for Web (ASP.NET MVC, ASP.NET Core and Angular) - How to Use the Report Wizard Customization API and Hide Data Source Actions in Report Designer
+# Web Reporting (ASP.NET MVC, ASP.NET Core and Angular) - How to Customize the DevExpress Report Wizard Customization and Hide Data Source Actions within our Report Designer
 
-This example shows how to add a custom report template to the Report Wizard and make final adjustments to the report you are creating. The Report designer is configured to hide data source actions so that the user cannot add, modify, or delete the report data source.
+For more information on the capabilities outlined in this example (or if you are new to DevExpress Reports), please review the following blog post for important background information: [DevExpress Web Report Designer — Custom Report Templates within the Report Wizard, Data Source UI Enhancements (v22.2)](https://community.devexpress.com/blogs/reporting/archive/2023/03/02/devexpress-web-report-designer-enhancements-in-v22-2.aspx)
 
-The example includes separate projects for ASP.NET MVC, ASP.NET Core and Angular client application with ASP.NET Core backend.
+DevExpress Reports ships with an easy-to-use/flexible Report Wizard.  You can use the Report Wizard to generate reports yourself or make it available to end users (minimize development costs/maximize productivity). This example will show you how to add a custom report template to the Report Wizard and make modifications to a wizard-generated report. Our sample project includes separate projects for ASP.NET MVC, ASP.NET Core, and Angular client application with an ASP.NET Core backend.
 
-The implementation is based on the following classes:
+To customize the DevExpress Report Wizard and add new wizard report templates (this example adds Instant Report and Custom Label Report templates to our default template list), you must:
  
-- The [ReportWizardCustomizationService](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.ReportDesigner.Services.ReportWizardCustomizationService) class descendant is implemented and registered as a service to customize the Report Wizard.
+- Implement a descendant of the [ReportWizardCustomizationService](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.ReportDesigner.Services.ReportWizardCustomizationService) class and register it as a service.
+- Handle the Report Designer `CustomizeWizard` event to register a custom wizard page. (the `reportWizardCustomization.js` file contains JavaScript code required for registration).
 
-The Report Designer `CustomizeWizard` event is handled to register a custom wizard page. The `reportWizardCustomization.js` file contains JavaScript code required for registration.
+To hide data source action from our Report Designer’s Field List panel, you must:
 
-- The [ReportDesignerDataSourceSettings](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.ReportDesigner.ReportDesignerDataSourceSettings) class contains settings that allow you to hide data source actions from the Field List panel.
- 
-After you run the application, invoke the **Report Wizard** to see new `Instant Report` and `Custom Label Report` templates:
+- Use the following class:[ReportDesignerDataSourceSettings](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.ReportDesigner.ReportDesignerDataSourceSettings).
+
+> **Note**
+> To help illustrate available options, the Report Designer was configured to hide data source actions. As such, users cannot add, modify, or delete the data source used for this report.
+
+By customizing our wizard’s default template set, you can address a variety of usage scenarios. To see what’s possible, execute the app, invoke the **Report Wizard**, and select a custom template included with this demo (`Instant Report` and `Custom Label Report`).
 
 ![Report Wizard with Custom Template](Images/template.png)
+
+Once you generate a wizard-based report, switch to the **Field List** panel. Notice that data source actions have been hidden (via [ReportDesignerDataSourceSettings](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.ReportDesigner.ReportDesignerDataSourceSettings)).
 
 In the Report Designer, switch to the **Field List** panel to make sure that data source actions are hidden:
 
