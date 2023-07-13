@@ -1,3 +1,8 @@
+<!-- default badges list -->
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/602963716/2023.1)
+[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1148046)
+[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+<!-- default badges end -->
 # Web Reporting (ASP.NET MVC, ASP.NET Core and Angular) - How to Customize the DevExpress Report Wizard Customization and Hide Data Source Actions within our Report Designer
 
 For more information on the capabilities outlined in this example (or if you are new to DevExpress Reports), please review the following blog post for important background information: [DevExpress Web Report Designer — Custom Report Templates within the Report Wizard, Data Source UI Enhancements (v22.2)](https://community.devexpress.com/blogs/reporting/archive/2023/03/02/devexpress-web-report-designer-enhancements-in-v22-2.aspx)
