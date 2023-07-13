@@ -4,7 +4,6 @@ import { addToBindingsCache } from '@devexpress/analytics-core/analytics-utils'
 import * as ko from 'knockout';
 import * as $ from 'jquery';
 
-
 @Component({
     selector: 'report-designer',
     encapsulation: ViewEncapsulation.None,

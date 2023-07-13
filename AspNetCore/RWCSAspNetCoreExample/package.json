@@ -5,8 +5,8 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "devextreme": "22.2-stable",
-    "@devexpress/analytics-core": "22.2-stable",
-    "devexpress-reporting": "22.2-stable"
+    "devextreme-dist": "23.1-stable",
+    "@devexpress/analytics-core": "23.1-stable",
+    "devexpress-reporting": "23.1-stable"
   }
 }
