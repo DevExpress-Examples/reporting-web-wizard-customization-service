@@ -65,4 +65,3 @@ Once you generate a wizard-based report, switch to the **Field List** panel. Not
 ## More Examples
 
 - [Reporting for Web - How to customize the Web Report Wizard](https://github.com/DevExpress-Examples/Reporting-Customize-Web-Report-Wizard)
-
