@@ -17,20 +17,22 @@
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "src/tsconfig.app.json",
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-              "assets": [
-                {
-                  "glob": "**/worker-json.js",
-                  "input": "../node_modules/ace-builds/src-min-noconflict/",
-                  "output": "./"
-                },
-                "src/assets"
-              ],
+            "assets": [
+              {
+                "glob": "**/worker-json.js",
+                "input": "../node_modules/ace-builds/src-min-noconflict/",
+                "output": "./"
+              },
+              "src/assets"
+            ],
             "scripts": []
           },
           "configurations": {
