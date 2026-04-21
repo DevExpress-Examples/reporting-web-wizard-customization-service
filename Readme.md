@@ -41,12 +41,13 @@ Once you generate a wizard-based report, switch to the **Field List** panel. Not
 
 - ASP.NET MVC: [Global.asax.cs](Mvc/ReportWizardCustomizationServiceMvcExample/Global.asax.cs)
 - ASP.NET Core: [Startup.cs](AspNetCore/RWCSAspNetCoreExample/Startup.cs)
+- Angular: [Program.cs](Angular/AngularExample/AngularExample.Server/Program.cs)
 
 ### Custom Wizard Page for the Custom Label Report
 
 - ASP.NET MVC: [Designer.cshtml](Mvc/ReportWizardCustomizationServiceMvcExample/Views/Home/Designer.cshtml)
 - ASP.NET Core: [Designer.cshtml](AspNetCore/RWCSAspNetCoreExample/Views/Home/Designer.cshtml)
-- Angular: [report-designer.html](Angular/RWCSAngularExample/ClientApp/src/app/reportdesigner/report-designer.html) and[report-designer.ts](Angular/RWCSAngularExample/ClientApp/src/app/reportdesigner/report-designer.ts)
+- Angular: [report-designer.html](Angular/AngularExample/AngularExample.Client/src/app/reportdesigner/report-designer.html) and [report-designer.ts](Angular/AngularExample/AngularExample.Client/src/app/reportdesigner/report-designer.ts)
 - [reportWizardCustomization.js](Mvc/ReportWizardCustomizationServiceMvcExample/Scripts/reportWizardCustomization.js)
 - [LabelReport.cs](Mvc/ReportWizardCustomizationServiceMvcExample/PredefinedReports/LabelReport.cs)
 
@@ -54,7 +55,7 @@ Once you generate a wizard-based report, switch to the **Field List** panel. Not
 
 - ASP.NET MVC: [Designer.cshtml](Mvc/ReportWizardCustomizationServiceMvcExample/Views/Home/Designer.cshtml)
 - ASP.NET Core: [HomeController.cs](AspNetCore/RWCSAspNetCoreExample/Controllers/HomeController.cs)
-- Angular: [report-designer.html](Angular/RWCSAngularExample/ClientApp/src/app/reportdesigner/report-designer.html)
+- Angular: [report-designer.html](Angular/AngularExample/AngularExample.Client/src/app/reportdesigner/report-designer.html)
 
 ## Documentation
 
