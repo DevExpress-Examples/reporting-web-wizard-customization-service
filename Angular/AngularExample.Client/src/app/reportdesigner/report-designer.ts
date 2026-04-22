@@ -29,9 +29,6 @@ export class ReportDesigner {
 
   constructor(@Inject('BASE_URL') protected readonly hostUrl: string) { }
 
-  OnBeforeRender(eventArgs: any) {
-  }
-
   OnCustomizeReportWizard(event: any) {
     this.CustomizeReportWizard(event.args);
   }

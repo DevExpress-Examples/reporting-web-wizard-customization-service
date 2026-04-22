@@ -2,10 +2,7 @@
     <dxrd-request-options [host]="hostUrl" [getLocalizationAction]="getLocalizationAction" [getDesignerModelAction]="getDesignerModelAction"></dxrd-request-options>
     <dxrd-designer-model-settings [allowMDI]="true">
         <dxrd-datasource-settings [allowAddDataSource]="false" [allowEditDataSource]="false" [allowRemoveDataSource]="false"></dxrd-datasource-settings>
-        <dxrd-preview-settings>
-            <dxrv-search-settings [searchEnabled]="true"></dxrv-search-settings>
-        </dxrd-preview-settings>
     </dxrd-designer-model-settings>
-    <dxrd-callbacks (BeforeRender)="OnBeforeRender($event)" (CustomizeWizard)="OnCustomizeReportWizard($event)">
+    <dxrd-callbacks (CustomizeWizard)="OnCustomizeReportWizard($event)">
     </dxrd-callbacks>
 </dx-report-designer>
