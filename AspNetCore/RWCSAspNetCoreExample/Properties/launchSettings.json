@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "RWCSAspNetCoreExample": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:1976;http://localhost:1977"
+    }
+  }
+}
