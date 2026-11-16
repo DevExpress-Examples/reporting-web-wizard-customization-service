@@ -2,7 +2,6 @@ import { Component, Inject, ViewEncapsulation } from '@angular/core';
 import { DxReportDesignerModule, DxReportViewerModule } from 'devexpress-reporting-angular';
 import { WizardPageBase } from '@devexpress/analytics-core/analytics-wizard';
 import { addToBindingsCache } from '@devexpress/analytics-core/analytics-utils';
-import * as ko from 'knockout';
 import * as $ from 'jquery';
 
 @Component({
@@ -45,17 +44,51 @@ export class ReportDesigner {
 
       override commit() {
         return $.Deferred().resolve({
-          Label1: (this as any).label1Value(),
-          Label2: (this as any).label2Value(),
-          Label3: (this as any).label3Value(),
-          ReportName: (this as any).label4Value(),
+          Label1: this.label1Value,
+          Label2: this.label2Value,
+          Label3: this.label3Value,
+          ReportName: this.label4Value,
         }).promise();
       }
 
-      label1Value = ko.observable('Label1');
-      label2Value = ko.observable('Label2');
-      label3Value = ko.observable('Label3');
-      label4Value = ko.observable('SomeReportName');
+      override createViewModel() {
+        return {
+          ...super.createViewModel(),
+          label1Editor: {
+            value: this.label1Value,
+            onValueChanged: (e: { value: string }) => {
+              this.label1Value = e.value;
+              this.notifyStateChanged();
+            }
+          },
+          label2Editor: {
+            value: this.label2Value,
+            onValueChanged: (e: { value: string }) => {
+              this.label2Value = e.value;
+              this.notifyStateChanged();
+            }
+          },
+          label3Editor: {
+            value: this.label3Value,
+            onValueChanged: (e: { value: string }) => {
+              this.label3Value = e.value;
+              this.notifyStateChanged();
+            }
+          },
+          label4Editor: {
+            value: this.label4Value,
+            onValueChanged: (e: { value: string }) => {
+              this.label4Value = e.value;
+              this.notifyStateChanged();
+            }
+          }
+        };
+      }
+
+      label1Value = 'Label1';
+      label2Value = 'Label2';
+      label3Value = 'Label3';
+      label4Value = 'SomeReportName';
     }
     args.wizard.pageFactory.registerMetadata('CustomLabelPage', {
       create: () => new LabelPage(),
@@ -88,10 +121,10 @@ export class ReportDesigner {
 
   CustomizeReportWizard(event: any) {
     if (event.Type === 'ReportWizard') {
-      addToBindingsCache('dxTextBox: { value: label4Value }', function ($context: any, $element: any) { return { 'dxTextBox': function () { return { 'value': $context.$data.label4Value } } } });
-      addToBindingsCache('dxTextBox: { value: label1Value }', function ($context: any, $element: any) { return { 'dxTextBox': function () { return { 'value': $context.$data.label1Value } } } });
-      addToBindingsCache('dxTextBox: { value: label2Value }', function ($context: any, $element: any) { return { 'dxTextBox': function () { return { 'value': $context.$data.label2Value } } } });
-      addToBindingsCache('dxTextBox: { value: label3Value }', function ($context: any, $element: any) { return { 'dxTextBox': function () { return { 'value': $context.$data.label3Value } } } });
+      addToBindingsCache('dxTextBox: label4Editor', function ($context: any) { return { 'dxTextBox': function () { return $context.$data.label4Editor; } } });
+      addToBindingsCache('dxTextBox: label1Editor', function ($context: any) { return { 'dxTextBox': function () { return $context.$data.label1Editor; } } });
+      addToBindingsCache('dxTextBox: label2Editor', function ($context: any) { return { 'dxTextBox': function () { return $context.$data.label2Editor; } } });
+      addToBindingsCache('dxTextBox: label3Editor', function ($context: any) { return { 'dxTextBox': function () { return $context.$data.label3Editor; } } });
       event.Wizard.events.addHandler('beforeInitialize', this.beforeInitializeWizard);
       event.Wizard.events.addHandler('afterInitialize', this.afterInit);
       event.Wizard.events.addHandler('beforeFinish', this.beforeFinishWizard);
